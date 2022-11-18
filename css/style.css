@@ -127,7 +127,6 @@ h6 {
   background-color: #da3240;
   -webkit-transform: rotateX(60deg) rotatez(45deg);
           transform: rotateX(60deg) rotatez(45deg);
-  z-index: 1;
 }
 @media (max-width: 767px) {
   .header__logo-cube {
@@ -188,7 +187,7 @@ h6 {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
-  z-index: 2;
+  z-index: 999;
 }
 @media (max-width: 991px) {
   .header__nav {
@@ -209,7 +208,6 @@ h6 {
     -ms-flex-line-pack: center;
         align-content: center;
     background-color: #36383a;
-    z-index: 2;
     overflow: scroll;
   }
 }
@@ -544,7 +542,7 @@ h6 {
   -o-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
   display: none;
-  z-index: 999;
+  z-index: 1000;
 }
 @media (max-width: 991px) {
   .header .menu-btn {
@@ -581,6 +579,7 @@ h6 {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+  color: #fff;
 }
 .header #menu-toggle:checked ~ .menu-btn::before {
   top: 0px;
