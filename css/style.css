@@ -600,6 +600,7 @@ h6 {
 }
 .header #menu-toggle:checked ~ .header__logo > .header__logo-cube {
   z-index: 1;
+  display: none;
 }
 
 body {
