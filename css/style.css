@@ -580,6 +580,7 @@ h6 {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   color: #fff;
+  z-index: 1111;
 }
 .header #menu-toggle:checked ~ .menu-btn::before {
   top: 0px;
@@ -595,6 +596,10 @@ h6 {
 }
 .header #menu-toggle:checked ~ .header__nav {
   top: -20px;
+  z-index: 999;
+}
+.header #menu-toggle:checked ~ .header__logo > .header__logo-cube {
+  z-index: 1;
 }
 
 body {
