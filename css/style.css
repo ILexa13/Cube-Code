@@ -127,8 +127,7 @@ h6 {
   background-color: #da3240;
   -webkit-transform: rotateX(60deg) rotatez(45deg);
           transform: rotateX(60deg) rotatez(45deg);
-  -webkit-perspective: 900px;
-          perspective: 900px;
+  z-index: 1;
 }
 @media (max-width: 767px) {
   .header__logo-cube {
@@ -189,6 +188,7 @@ h6 {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  z-index: 2;
 }
 @media (max-width: 991px) {
   .header__nav {
@@ -578,7 +578,6 @@ h6 {
   z-index: -1;
 }
 .header #menu-toggle:checked ~ .menu-btn {
-  z-index: 999;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -597,9 +596,6 @@ h6 {
 }
 .header #menu-toggle:checked ~ .header__nav {
   top: -20px;
-}
-.header #menu-toggle:checked ~ .header__logo-cube {
-  display: none;
 }
 
 body {
