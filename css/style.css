@@ -127,8 +127,6 @@ h6 {
   background-color: #da3240;
   -webkit-transform: rotateX(60deg) rotatez(45deg);
           transform: rotateX(60deg) rotatez(45deg);
-  -webkit-perspective: 900px;
-          perspective: 900px;
 }
 @media (max-width: 767px) {
   .header__logo-cube {
