@@ -127,6 +127,8 @@ h6 {
   background-color: #da3240;
   -webkit-transform: rotateX(60deg) rotatez(45deg);
           transform: rotateX(60deg) rotatez(45deg);
+  -webkit-perspective: 900px;
+          perspective: 900px;
 }
 @media (max-width: 767px) {
   .header__logo-cube {
@@ -208,6 +210,7 @@ h6 {
         align-content: center;
     background-color: #36383a;
     z-index: 2;
+    overflow: scroll;
   }
 }
 .header__nav-list {
@@ -575,22 +578,27 @@ h6 {
   z-index: -1;
 }
 .header #menu-toggle:checked ~ .menu-btn {
-  background-color: transparent;
-}
-.header #menu-toggle:checked ~ .menu-btn::before {
-  top: 0px;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.header #menu-toggle:checked ~ .menu-btn::after {
-  top: 0px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+.header #menu-toggle:checked ~ .menu-btn::before {
+  top: 0px;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.header #menu-toggle:checked ~ .menu-btn::after {
+  top: 0px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
 .header #menu-toggle:checked ~ .header__nav {
   top: -20px;
+}
+.header #menu-toggle:checked ~ .header__logo-cube {
+  display: none;
 }
 
 body {
